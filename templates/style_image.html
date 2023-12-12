@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Images</title>
+    <style>
+      body {
+        background-color: white;
+        color: blue;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1, h2 {
+        color: darkblue;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      input[type=submit] {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+        animation: img-slide-in 2s ease-out;
+      }
+      #remove {
+        display: inline-block;
+        color: white;
+        background-color: blue;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 4px;
+      }
+
+      @keyframes img-slide-in {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(0); }
+      }
+
+    </style>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    <h1> Style your images! </h1>
+    <p> Upload your image and upload your style image to generate your image in that style.</p>
+
+    <h2>Upload Images</h2>
+    <p>Upload your feature image</p>
+    <form action="/upload/image1.jpg" method=post enctype=multipart/form-data>
+      <input type=file name=file id="file" >
+      <input type=submit value=Upload id="Upload">
+    </form>
+
+    <img src="/static/images/image1.jpg" alt="Styled Image">
+
+    <p>Upload your style image</p>
+    <form action="/upload/image2.jpg" method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+
+    <img src="/static/images/image2.jpg" alt="Styled Image">
+
+    <p>Display your final image</p>
+    <form action="/style" method="post">
+      <input type="submit" value="Style your image">
+    </form>
+
+    <img src="/static/images/styled_image.jpg" alt="Styled Image">
+
+    <p></p>
+    <a href="/remove" id="remove" class="btn btn-success mr-2">Try with new images</a>
+ 
+    {% endblock %}
+    
+  </body>
+</html>

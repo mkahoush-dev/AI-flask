@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with DialoGPT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1>Chat with DialoGPT</h1>
+    <div id="chatbox">
+        <p class="botText"><span>DialoGPT:</span> Hi! How can I assist you today?</p>
+    </div>
+    <div id="userInput">
+        <input id="textInput" type="text" name="msg" placeholder="Message">
+        <input id="buttonInput" type="submit" value="Send">
+    </div>
+    <script>
+        function getBotResponse() {
+            var rawText = $("#textInput").val();
+            var userHtml = '<p class="userText"><span>You:</span> ' + rawText + '</p>';
+            $("#textInput").val("");
+            $("#chatbox").append(userHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            $.get("/get", { msg: rawText }).done(function(data) {
+                var botHtml = '<p class="botText"><span>DialoGPT:</span> ' + data + '</p>';
+                $("#chatbox").append(botHtml);
+                document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            });
+        }
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+            }
+        });
+        $("#buttonInput").click(function() {
+            getBotResponse();
+        })
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        #chatbox {
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 80%;
+            height: 400px;
+            overflow-y: auto;
+        }
+        #userInput {
+            margin: 0 auto;
+            padding: 20px;
+            width: 80%;
+        }
+        #textInput {
+            width: 80%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        #buttonInput {
+            width: 15%;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+        #buttonInput:hover {
+            background-color: #45a049;
+        }
+        .userText {
+            color: blue;
+            font-weight: bold;
+        }
+        .botText {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    {% endblock %}
+</body>
+</html>
