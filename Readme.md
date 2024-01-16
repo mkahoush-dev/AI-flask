@@ -38,8 +38,8 @@ Here's an example of what you can do with this  website:
 - Stylized Image: The cityscape photo rendered in the style of Van Gogh's painting.
 
 - ![image info](./images/th.jpg)
-- ![image info](./images/van_gogh_starry_night.jpg)
-- ![image info](./images/th.jpg)
+- ![image info](./images/Vassily_Kandinsky,_1913_-_Composition_7.jpg)
+- ![image info](./images/styled_image.jpg)
 
 We hope you enjoy using our Image Styling Website!
 
