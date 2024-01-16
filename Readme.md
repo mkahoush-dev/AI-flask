@@ -14,15 +14,15 @@ I hope you enjoy exploring my website and learning more about my AI projects. If
 
 
 
-# Image Styling
+## 1. Image Styling
 
 Welcome to our Image Styling Website! This web application allows you to combine the details of a feature image with the style of another image to create a unique, stylized image.
 
-## How It Works
+### How It Works
 
 Our website uses a sophisticated algorithm to extract the details from one image (the feature image) and the style from another image (the style image). It then combines these two to generate a new image that has the details of the feature image and the style of the style image.
 
-## Usage
+### Usage
 
 1. **Upload your images**: On the home page, you'll find an option to upload two images - the feature image and the style image. The feature image is the one whose details you want to preserve, and the style image is the one whose style you want to apply to the feature image.
 
@@ -30,12 +30,21 @@ Our website uses a sophisticated algorithm to extract the details from one image
 
 3. **View your stylized image**: Once the image has been generated, it will be displayed on the website. You can then view or download your stylized image.
 
-## Example
+### Example
 Here's an example of what you can do with this  website:
 
 - Feature Image: A photo of a cityscape.
 - Style Image: A painting by Van Gogh.
 - Stylized Image: The cityscape photo rendered in the style of Van Gogh's painting.
 
+- ![image info](./images/th.jpg)
+- ![image info](./images/van_gogh_starry_night.jpg)
+- ![image info](./images/th.jpg)
+
 We hope you enjoy using our Image Styling Website!
+
+
+## 2. Blog Generator
+
+## 3. Chat Bot
 
