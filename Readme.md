@@ -10,6 +10,8 @@ Here is what you can do on my website:
 
 **AI Chat Bot**: This project uses AI to create a basic chat bot that can converse with you on various topics. It uses natural language processing and generation to understand your messages and respond appropriately. For example, you can chat with it about the weather, sports, or movies.
 
+**Use AI to answer questions about your images**: This project uses AI to answer your questions about your images.
+
 I hope you enjoy exploring my website and learning more about my AI projects. If you have any questions or feedback, feel free to contact me. Thank you for visiting!
 
 
@@ -46,5 +48,19 @@ We hope you enjoy using our Image Styling Website!
 
 ## 2. Blog Generator
 
+This page generates a blog post given only its title!
+
 ## 3. Chat Bot
+
+This is a very basic chat bot
+
+##4. Answer questions about your images
+
+For example:
+
+- ![image info](./images/cat.jpg)
+
+- How many cats are there?
+- Answer: 2
+
 
