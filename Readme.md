@@ -68,7 +68,7 @@ Answer: 2
 - ##4. Generate Images
 For example:
 
-  ![image info](./static/images/ig.jpg)
+  ![image info](./static/images/ig1.jpg)
 
  **Prompt**: An astronaut on a horse
 
