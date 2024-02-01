@@ -60,6 +60,14 @@ def content_summerizer():
         summary = run(title, length)
     return render_template('content_summerizer.html', summary=summary)
 
+@app.route('/image_generator', methods=['GET', 'POST'])
+def image_generator():
+    from image_generator import generate
+    if request.method == 'POST':
+        prompt = request.form.get('prompt')
+        generate(prompt)
+    return render_template('image_generator.html')
+
 @app.route('/question_image', methods=['GET', 'POST'])
 def question_image():
     from question_image import run
