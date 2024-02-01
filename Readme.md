@@ -12,6 +12,8 @@ Here is what you can do on my website:
 
 **Use AI to answer questions about your images**: This project uses AI to answer your questions about your images.
 
+**Use AI to Generate Image**: This project uses AI to generate your image given a prompt.
+
 I hope you enjoy exploring my website and learning more about my AI projects. If you have any questions or feedback, feel free to contact me. Thank you for visiting!
 
 
@@ -58,9 +60,16 @@ This is a very basic chat bot
 
 For example:
 
-- ![image info](./images/cat.jpg)
+![image info](./images/cat.jpg)
 
-- How many cats are there?
-- Answer: 2
+How many cats are there?
+Answer: 2
+
+- ##4. Generate Images
+For example:
+
+  ![image info](./static/images/ig.jpg)
+
+ **Prompt**: In a realistic modern style as though taken from a camera, generate a billion dollar interior design
 
 
