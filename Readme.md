@@ -70,6 +70,6 @@ For example:
 
   ![image info](./static/images/ig.jpg)
 
- **Prompt**: In a realistic modern style as though taken from a camera, generate a billion dollar interior design
+ **Prompt**: An astronaut on a horse
 
 
