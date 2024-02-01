@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Generate your images</title>
+    <style>
+      /* body {
+        background-color: white;
+        color: blue;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      } */
+      h1, h2 {
+        color: darkblue;
+      }
+      /* form {
+        margin-bottom: 20px;
+      } */
+      input[type=submit] {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+        animation: img-slide-in 2s ease-out;
+      }
+      #remove {
+        display: inline-block;
+        color: white;
+        background-color: blue;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 4px;
+      }
+
+      @keyframes img-slide-in {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(0); }
+      }
+
+    </style>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <h1>Generate your image!</h1>
+    <form method="POST">
+        <label for="prompt">Prompt:</label><br>
+        <input type="text" id="prompt" name="prompt" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <p>Your image</p>
+
+    <img src="/static/images/ig.jpg" alt="Generated Image">
+ 
+    {% endblock %}
+    
+  </body>
+</html>
