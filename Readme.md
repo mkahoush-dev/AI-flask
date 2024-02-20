@@ -56,7 +56,7 @@ This page generates a blog post given only its title!
 
 This is a very basic chat bot
 
-##4. Answer questions about your images
+## 4. Answer questions about your images
 
 For example:
 
@@ -64,7 +64,7 @@ For example:
 
 How many cats are there?
 Answer: 2
-## 4. Generate Images
+## 5. Generate Images
 
 For example:
 
