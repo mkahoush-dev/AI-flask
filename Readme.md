@@ -64,8 +64,8 @@ For example:
 
 How many cats are there?
 Answer: 2
+## 4. Generate Images
 
-- ##4. Generate Images
 For example:
 
   ![image info](./static/images/ig1.jpg)
