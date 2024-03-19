@@ -5,7 +5,9 @@ A webiste I created to showcase my AI projects.
 
 To get started simply run:
 
-''' python main.py '''
+ ```
+python main.py
+``` 
 
 And open open your localHost to see the site!
 
