@@ -1,6 +1,14 @@
 # Flask-AI
 A webiste I created to showcase my AI projects.
 
+## Get Started
+
+To get started simply run:
+
+''' python main.py '''
+
+And open open your localHost to see the site!
+
 Here is what you can do on my website:
 
 
