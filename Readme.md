@@ -9,7 +9,7 @@ To get started simply run:
 python main.py
 ``` 
 
-And open open [localHost](http://127.0.0.1:5000) to see the site!
+And open [localHost](http://127.0.0.1:5000) to see the site!
 
 Here is what you can do on my website:
 
